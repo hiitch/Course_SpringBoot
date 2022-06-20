@@ -6,19 +6,21 @@ plugins {
 
 group = 'com.springboot.demo'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation 'org.springframework.boot:spring-boot-devtools'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'mysql:mysql-connector-java:5.1.44'
 }
 
 tasks.named('test') {
