@@ -15,7 +15,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="employee")
-@Getter @Setter
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
